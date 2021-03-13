@@ -13,7 +13,7 @@ fn main() {
     )
     .unwrap();
     writeln!(&mut file, "}}").unwrap();
-    let end = 101;
+    let end = 1001;
     for n in 1..end {
         let code = format!("const Component{} = (props) => {{", n);
         writeln!(&mut file, "{}", code).unwrap();
